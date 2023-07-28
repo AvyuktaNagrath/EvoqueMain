@@ -25,10 +25,10 @@ export default function Home({ blogs }) {
       </div>
     </section>
     <section className={styles.section}>
-      <FeaturedVideo blog={blogs[1]} />
+      <FeaturedVideo blogs={blogs[1]} />
     </section>
     <section className={styles.section}>
-      <FeaturedArticle blog={blogs[0]} />
+      <FeaturedArticle blog={blogs} />
     </section>
   </div>
 </>

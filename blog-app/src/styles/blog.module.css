@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=GT+Walsheim&display=swap');
-
+.button {
+    background-color: red;
+    color: white;
+  }
+  
+  .button.selected,
+  .button:hover {
+    background-color: gray;
+  }
+  
 
 .single_article_page{
     display: flex;

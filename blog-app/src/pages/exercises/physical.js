@@ -14,8 +14,7 @@ const Physical = ({ blogs }) => {
 
   const customButtonStyle = {
     fontFamily: "'GT-Walsheim', sans-serif",
-    textTransform: "uppercase",
-    backgroundColor: category === "" && "gray",
+    textTransform: "uppercase"
 
   };
 
@@ -29,11 +28,26 @@ const Physical = ({ blogs }) => {
       <Navbar />
       {/* <Banner blogs={blogs} /> */}
       <div className={styles.filteration_bar} style={{marginTop: "80px"}}>
-          <button onClick={() => setCategory("")} style={{...customButtonStyle}} > All </button>
-          {
-            exerciseCategories.map(cat => <button onClick={() => setCategory(cat)} style={{...customButtonStyle}} > {cat} </button>)
-          }
-        </div>
+    <button 
+        className={`${styles.button} ${category === "" ? styles.selected : ""}`}
+        onClick={() => setCategory("")} 
+        style={customButtonStyle} 
+    > 
+        All 
+    </button>
+    {
+        exerciseCategories.map(cat => (
+            <button 
+                className={`${styles.button} ${category === cat ? styles.selected : ""}`}
+                onClick={() => setCategory(cat)} 
+                style={customButtonStyle} 
+            > 
+                {cat} 
+            </button>
+        ))
+    }
+</div>
+
       <MentalBlogsContainer blogs={blogs} category = {category} />
     </>
   )

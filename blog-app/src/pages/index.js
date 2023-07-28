@@ -10,25 +10,28 @@ import FeaturedArticle from "../components/FeaturedArticle";
 export default function Home({ blogs }) {
   return (
     <>
-      <CustomHead
-        title="Evoque Fitness"
-        description="see all science blogs here"
-        keyword="science blogs, food blogs"
-      />
-      <Navbar />
-      <section className={styles.banner}>
+  <CustomHead
+    title="Evoque Fitness"
+    description="see all science blogs here"
+    keyword="science blogs, food blogs"
+  />
+  <Navbar />
+  <div className={styles.container}>
+    <section className={styles.section}>
+      <div className={styles.banner}>
         <div className={styles.bannerContent}>
-          <h1>Welcome to Evoque Fitness</h1>
-          <p>Discover a healthier you</p>
+          <h1>Evoque Fitness</h1>
         </div>
-      </section>
-      <section>
-        <FeaturedVideo blog={blogs[1]} />
-      </section>
-      <section>
-        <FeaturedArticle blog={blogs[0]} />
-      </section>
-    </>
+      </div>
+    </section>
+    <section className={styles.section}>
+      <FeaturedVideo blog={blogs[1]} />
+    </section>
+    <section className={styles.section}>
+      <FeaturedArticle blog={blogs[0]} />
+    </section>
+  </div>
+</>
   );
 }
 

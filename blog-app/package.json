@@ -27,9 +27,11 @@
     "react-dom": "18.2.0",
     "react-draft-wysiwyg": "^1.15.0",
     "react-html-map": "^0.1.1",
+    "react-responsive-carousel": "^3.2.23",
     "react-select": "^5.7.0",
     "react-youtube": "^10.1.0",
-    "rerousel": "^0.1.9"
+    "rerousel": "^0.1.9",
+    "styled-components": "^6.0.5"
   },
   "devDependencies": {
     "css-loader": "^6.8.1"

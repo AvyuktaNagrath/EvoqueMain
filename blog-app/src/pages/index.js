@@ -6,41 +6,43 @@ import requestConfig from "../utils/config";
 import FeaturedVideo from "../components/FeaturedVideo";
 import FeaturedArticle from "../components/FeaturedArticle";
 
-
+/* Home component JSX */
 export default function Home({ blogs }) {
   return (
     <>
-  <CustomHead
-    title="Evoque Fitness"
-    description="see all science blogs here"
-    keyword="science blogs, food blogs"
-  />
-  <Navbar />
-  <div className={styles.container}>
-    <section className={styles.section}>
-      <div className={styles.banner}>
-        <div className={styles.bannerContent}>
-          <h1>Evoque Fitness</h1>
-        </div>
+      <CustomHead
+        title="Evoque Fitness"
+        description="see all science blogs here"
+        keyword="science blogs, food blogs"
+      />
+      <Navbar />
+      <div className={styles.container}>
+        <section className={styles.section}>
+          <div className={styles.banner}>
+            <div className={styles.bannerContent}>
+              <h1>Evoque Fitness</h1>
+            </div>
+          </div>
+        </section>
+        <section className={styles.section}>
+          <FeaturedArticle blogs={blogs} />
+        </section>
       </div>
-    </section>
-    <section className={styles.section}>
-      <FeaturedVideo blogs={blogs[1]} />
-    </section>
-    <section className={styles.section}>
-      <FeaturedArticle blog={blogs} />
-    </section>
-  </div>
-</>
+    </>
   );
 }
 
+
 export async function getServerSideProps() {
-  console.log(process.env.NEXT_PUBLIC_BASE_URL);
+  console.log("Fetching blogs data...");
   let url = process.env.NEXT_PUBLIC_BASE_URL + "blogs";
   let res = await axios.get(url, requestConfig);
+  console.log("Fetched blogs data:", res.data.blogs); // Updated here
 
   return {
-    props: res.data,
+    props: {
+      blogs: res.data.blogs, // Updated here
+    },
   };
 }
+

@@ -1,6 +1,13 @@
+.header {
+  font-weight: lighter;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-size: 25px;
+}
+
 .about-us-container {
   text-align: center;
-  padding: 20px;
+  padding: 100px;
   background-color: black;
   color: white;
 }
@@ -10,14 +17,15 @@
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
   justify-items: center;
+  padding-top: 50px;
 }
 
 .team-member {
   width: 400px;
   padding: 20px;
-  border: 1px solid #ccc;
+  border: 1px solid red;
   border-radius: 4px;
-  background-color: #fff;
+  background-color: red;
   color: #000;
 }
 

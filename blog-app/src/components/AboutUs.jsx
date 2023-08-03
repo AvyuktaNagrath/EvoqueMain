@@ -64,7 +64,7 @@ const AboutUs = () => {
  
   return (
     <div className={styles['about-us-container']}>
-      <h1>About Us</h1>
+      <div className = {styles['header']}>Our Team</div>
       <div className={styles['team-members']}>
         {teamMembers.map((member, index) => (
           <div className={styles['team-member']} key={index}>

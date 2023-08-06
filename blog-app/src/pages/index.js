@@ -5,6 +5,7 @@ import styles from "../styles/home.module.css";
 import requestConfig from "../utils/config";
 import FeaturedVideo from "../components/FeaturedVideo";
 import FeaturedArticle from "../components/FeaturedArticle";
+import BackgroundCarousel from "../components/BackgroundCarousel"; // Import the new component
 
 /* Home component JSX */
 export default function Home({ blogs }) {
@@ -19,9 +20,7 @@ export default function Home({ blogs }) {
       <div className={styles.container}>
         <section className={styles.section}>
           <div className={styles.banner}>
-            <div className={styles.bannerContent}>
-              <h1>Evoque Fitness</h1>
-            </div>
+            <BackgroundCarousel />
           </div>
         </section>
         <section className={styles.section}>
@@ -31,7 +30,6 @@ export default function Home({ blogs }) {
     </>
   );
 }
-
 
 export async function getServerSideProps() {
   console.log("Fetching blogs data...");
@@ -45,4 +43,3 @@ export async function getServerSideProps() {
     },
   };
 }
-

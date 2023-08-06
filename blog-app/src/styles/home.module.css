@@ -6,16 +6,59 @@
 transform: scale(1.1);
 }
 
+/* Update the CSS module */
+
+/* Update the CSS module */
+
 .featuredHeader {
   position: absolute;
-  top: 10%; 
+  top: 30%; /* adjust as per your requirement */
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #fff;
-  font-size: 2rem; 
-  z-index: 2; 
+  font-family: 'sans-serif';
+  font-style: italic;
+  font-weight: lighter;
+  color: #fff; /* color of the text */
+  font-size: 2rem; /* font size */
+  z-index: 2; /* to make sure the text appears on top of the image */
+  text-align: center;
+  background-color: #000000; /* black background */
+  text-transform: uppercase; /* convert text to uppercase */
+  padding: 10px; /* add some padding around the text */
+}
+
+
+.card_content h2 {
+  font-size: 1.2rem;
+  text-align: center;
+  font-family: 'sans-serif';
+  font-style: italic;
+  font-weight: lighter;
+  color: #fff; /* change this color as per your requirement */
+  background-color: #ff0000; /* black background */
+  text-transform: uppercase; /* convert text to uppercase */
+  padding: 10px; /* add some padding around the text */
+}
+
+/* CSS module */
+
+.featuredText {
+  font-family: 'sans-serif';
+  font-style: 'italic';
+  font-weight: 'lighter';
+  text-transform: uppercase;
   text-align: center;
 }
+
+.textBackground {
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+}
+
+
+
+
 
 
 
@@ -40,10 +83,6 @@ padding: 10px;
 height: 25vh;
 }
 
-.card_content h2 {
-font-size: 1.2rem;
-text-align: center;
-}
 
 .carousel .slide {
 width: 100vw;
@@ -82,20 +121,23 @@ height: 100vh;
 scroll-snap-align: start;
 }
 
+/* ...rest of your css */
+
+/* remove background image from banner */
 .banner {
-height: 100vh;
-max-width: 100vw;
-display: flex;
-justify-content: center;
-align-items: center;
-position: relative; 
-background-image: url("../images/gym_background.jpg");
-background-size: cover;
-background-position: center center;
-background-repeat: no-repeat;
-position: relative;
-z-index: 0;
+  height: 100vh;
+  max-width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; 
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 0;
 }
+
 
 .bannerContent {
 text-align: center;

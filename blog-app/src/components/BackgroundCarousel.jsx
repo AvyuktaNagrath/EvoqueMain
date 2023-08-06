@@ -1,9 +1,9 @@
 import { useState, useEffect, useRef } from "react";
 
 const images = [
-  "/_next/static/media/kaden_jerry.51b99cee.JPG",
-  "/_next/static/media/gym_background.7e697d21.jpg",
-  "/_next/static/media/Charity.4ad35b6d.jpg",
+  "/images/kaden_jerry.JPG",
+  "/images/gym_background.jpg",
+  "/images/Charity.jpg",
 ];
 
 const links = [
@@ -35,7 +35,6 @@ function BackgroundCarousel() {
       setActiveImage((prevActiveImage) => {
         const nextActiveImage = (prevActiveImage + 1) % images.length;
 
-        sliderRef.current.style.transition = "none";
         sliderRef.current.style.transform = `translateX(-${(100 * nextActiveImage) / images.length}%)`;
         setTimeout(() => (sliderRef.current.style.transition = "transform 1s ease-in-out"), 50);
         

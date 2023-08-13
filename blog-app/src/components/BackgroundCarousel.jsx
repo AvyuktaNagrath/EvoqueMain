@@ -1,23 +1,23 @@
 import { useState, useEffect, useRef } from "react";
 
 const images = [
-  "/images/kaden_jerry.JPG",
-  "/images/gym_background.jpg",
-  "/images/Charity.jpg",
+  "/images/physicalCarousel.jpg",
+  "/images/nutritionalCarousel.jpg",
+  "/images/mentalCarousel.jpg",
 ];
 
 const links = [
-  "/page1",
-  "/page2",
-  "/page3",
+  "/physical",
+  "/nutritional",
+  "/mental",
 ];
 
-const headers = ["Welcome to Page 1", "Gym Training", "Charity Work"];
+const headers = ["Physical", "Nutritional", "Mental"];
 
 const paragraphs = [
-  "Explore the adventures of Page 1.", 
-  "Join us in our intensive gym training!", 
-  "Learn more about our charity work."
+  "Look and feel better through tailored physical exercise", 
+  "Scientifically optimize food and supplement intake through research and practice", 
+  "Revitalize your mental wellbeing and achieve inner peace through mental exercise and philosophy"
 ];
 
 function BackgroundCarousel() {
@@ -86,8 +86,8 @@ function BackgroundCarousel() {
               flexDirection: "column",
             }}
           >
-            <h1 style={{ color: 'white', textShadow: '2px 2px 4px #000000' }}>{headers[index]}</h1>
-            <p style={{ color: 'white', textShadow: '2px 2px 4px #000000' }}>{paragraphs[index]}</p>
+            <h1 style={{ color: 'white', textTransform: "uppercase", backgroundColor: "black", fontStyle: "italic" }}>{headers[index]}</h1>
+            <p style={{ color: 'white', textTransform: "uppercase", backgroundColor: "black", fontStyle: "italic" }}>{paragraphs[index]}</p>
           </div>
         ))}
       </div>

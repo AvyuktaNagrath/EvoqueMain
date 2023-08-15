@@ -32,10 +32,8 @@ export default function Home({ blogs }) {
 }
 
 export async function getServerSideProps() {
-  console.log("Fetching blogs data...");
   let url = process.env.NEXT_PUBLIC_BASE_URL + "blogs";
-  let res = await axios.get(url, requestConfig);
-  console.log("Fetched blogs data:", res.data.blogs); // Updated here
+  let res = await axios.get(url, requestConfig); // Updated here
 
   return {
     props: {

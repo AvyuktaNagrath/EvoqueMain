@@ -123,6 +123,24 @@ const MusclesWorked = [
     { value: "Front Delt", label: "Front Delt" },
     { value: "Mid-Chest", label: "Mid-Chest" },
     { value: "Lateral Delt", label: "Lateral Delt" },
+    { value: "Rear Delt", label: "Rear Delt" },
+    { value: "Long Head Bicep", label: "Long Head Bicep" },
+    { value: "Short Head Bicep", label: "Short Head Bicep" },
+    { value: "Long Head Tricep", label: "Long Head Tricep" },
+    { value: "Medial Head Tricep", label: "Medial Head Tricep" },
+    { value: "Lateral Head Tricep", label: "Lateral Head Tricep" },
+    { value: "Latissimus Dorsi", label: "Latissimus Dorsi" },
+    { value: "Supraspinatus", label: "Supraspinatus" },
+    { value: "Infraspinatus", label: "Infraspinatus" },
+    { value: "Teres Major", label: "Teres Major" },
+    { value: "Teres Minor", label: "Teres Minor" },
+    { value: "Traps", label: "Traps" },
+    { value: "Lower Back", label: "Lower Back" },
+    { value: "Quads", label: "Quads" },
+    { value: "Long Head Hamstrings", label: "Long Head Hamstrings" },
+    { value: "Short Head Hamstrings", label: "Short Head Hamstrings" },
+    { value: "Calves", label: "Calves" }
+    
 ]
 
 const TypeOfExercise = [

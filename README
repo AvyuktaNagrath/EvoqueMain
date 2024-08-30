@@ -1,10 +1,12 @@
 ********************************𝐈𝐌𝐏𝐎𝐑𝐓𝐀𝐍𝐓*****************************************
 𝐜𝐫𝐞𝐚𝐭𝐞 𝐚 .𝐞𝐧𝐯 𝐟𝐢𝐥𝐞 𝐢𝐧 𝐛𝐚𝐜𝐤𝐞𝐧𝐝 𝐟𝐨𝐥𝐝𝐞𝐫 𝐚𝐧𝐝 𝐚𝐝𝐝 𝐛𝐞𝐥𝐨𝐰 𝐥𝐢𝐧𝐞𝐬.
 
-DB_URL = "mongodb+srv://user1:avyu@cluster0.ccnfxta.mongodb.net/?retryWrites=true&w=majority"
-CLOUD_NAME = "dxgk3lc63"
-CLOUD_API_KEY = "385524412446863"
-CLOUD_API_SECRET = "DgGlkreOh4Fs5EI5hRZXeeyowBA"
+DB_URL = *********
+CLOUD_NAME = *********
+CLOUD_API_KEY = *********
+CLOUD_API_SECRET = *********
+
+Server is dead because i have no money... but feel free to use the code!
 ************************************************************************************
 
 1) Now open the project folder in VS CODE
